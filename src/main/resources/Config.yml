@@ -1,0 +1,23 @@
+ScoreBoard:
+  enable: true
+  title: " &c&lLanternMC &7&l효 搭路"
+  lines:
+    - " "
+    - '&f等级&7: %bw1058_player_level%'
+    - '&f进度&7: &b%bw1058_player_xp_formatted%&7/&a%bw1058_player_rerq_xp_formatted%'
+    - '&8[%bw1058_player_progress%&8]'
+    - "  "
+    - "&f奖励箱&7: &60 &8(未开放)"
+    - "   "
+    - "&f硬币&7: &60"
+    - "    "
+    - "&f总击杀&7: &a%bw1058_stats_kills%"
+    - "&f总胜利&7: &a%bw1058_stats_wins%"
+    - "     "
+    - "&cplay.lanternmc.net"
+world: Trainworld
+x: 0
+y: 980.0
+z: 0
+yaw: 0
+pitch: 0
