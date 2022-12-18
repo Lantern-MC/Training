@@ -31,4 +31,8 @@ public class LocationManager {
     public static void FirstJoin(Player p) {
         p.teleport(publicLoc);
     }
+
+    public static void removePlayCheckPoint(Player p) {
+        CheckPoint.remove(p);
+    }
 }

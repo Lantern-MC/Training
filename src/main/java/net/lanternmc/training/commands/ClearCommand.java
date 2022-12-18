@@ -14,7 +14,7 @@ import net.lanternmc.training.Counter;
 public class ClearCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (sender.hasPermission("bridginganalyzer.clear")) if (args.length == 0) {
+        if (sender.hasPermission("Training.clear")) if (args.length == 0) {
             sender.sendMessage("§b§l搭路练习 §7>> §c正在清除所有已放置方块....");
             for (Counter c : Training.getCounters().values()) {
                 c.instantBreakBlock();

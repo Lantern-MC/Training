@@ -14,7 +14,7 @@ public class SaveWorldCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (sender.hasPermission("bridginganalyzer.admin")) {
+        if (sender.hasPermission("Training.admin")) {
             sender.sendMessage("§b§l搭路练习 §7>> §c正在保存世界....");
             for (Counter c : Training.getCounters().values()) {
                 c.instantBreakBlock();

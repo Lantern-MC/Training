@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Training extends JavaPlugin{
+public class Training extends JavaPlugin {
     @Getter
     private static Training instance;
     @Getter
@@ -47,7 +47,7 @@ public class Training extends JavaPlugin{
     public void onEnable() {
         instance = this;
         Conf = new FileUtil(this, "Config.yml");
-        new BoardManager(this,new ScoreBoard());
+        new BoardManager(this, new ScoreBoard());
         blockSkinProvider = new DefaultBlockSkinProvider();
         Bukkit.getConsoleSender().sendMessage(new String[]{
                 "§bTraining §7>> §f----------------------------------------------------------------",
@@ -66,7 +66,7 @@ public class Training extends JavaPlugin{
 
         regListener();
         regCommands();
-        if (getServer().getWorld("Trainworld") == null){
+        if (getServer().getWorld("Trainworld") == null) {
             createWorld();
         }
         spawnVillager();
@@ -125,7 +125,7 @@ public class Training extends JavaPlugin{
     void createWorld() {
         File file = new File("");
         File worldFolder = new File(file.getAbsolutePath() + System.getProperty("file.separator") + "Trainworld");
-        if(!worldFolder.exists()) {
+        if (!worldFolder.exists()) {
             WorldCreator worldCreator = new WorldCreator("Trainworld");
             worldCreator.generateStructures(false);
             worldCreator.type(WorldType.NORMAL);

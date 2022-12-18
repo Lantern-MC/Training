@@ -24,9 +24,9 @@ commands:
     description: so
     usage: /setRange
 permissions:
-  bridginganalyzer.noclear:
+  Training.noclear:
     default: op
-  bridginganalyzer.clear:
+  Training.clear:
     default: op
-  bridginganalyzer.admin:
+  Training.admin:
     default: op

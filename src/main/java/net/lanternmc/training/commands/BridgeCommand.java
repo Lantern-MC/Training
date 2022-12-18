@@ -19,7 +19,7 @@ public class BridgeCommand implements CommandExecutor {
         }
         if (args.length != 1) {
             SendMessageUtils.sendMessage(sender,
-                    "§b§l搭路练习 §7>> §b§lBridgingAnalyzer | By.SakuraKooi",
+                    "§b§l搭路练习 §7>> §b§lTraining | By.SakuraKooi",
                     "§b§l搭路练习 §7>> §e/bridge highlight    §a启用/禁用侧搭辅助指示",
                     "§b§l搭路练习 §7>> §e/bridge pvp         §a启用/禁用伤害屏蔽",
                     "§b§l搭路练习 §7>> §e/bridge speed       §a启用/禁用搭路速度统计",
@@ -48,7 +48,7 @@ public class BridgeCommand implements CommandExecutor {
                 break;
             }
             case "setlobby": {
-                if (sender.hasPermission("bridginganalyzer.admin")) {
+                if (sender.hasPermission("Training.admin")) {
                     Location loc = ((Player) sender).getLocation();
                     Training.getInstance().getConf().set("world", loc.getWorld().getName());
                     Training.getInstance().getConf().set("x", loc.getX());

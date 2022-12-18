@@ -26,7 +26,6 @@ public class OnLineListener implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
-        if (e.getPlayer().hasPermission("Training.noclear")) return;
         Training.teleportCheckPoint(e.getPlayer());
         createRunable(e.getPlayer());
     }
@@ -44,6 +43,7 @@ public class OnLineListener implements Listener {
                             0,
                             (float) 0,
                             (float) 0).add(0.5, 1, 0.5);
+                    p.teleport(checkPoint);
                 }
                 p.sendMessage(new String[]{
                         "§b§l高级训练场 §7>> §e输入 §6/bridge §e更改练习参数",
@@ -57,8 +57,9 @@ public class OnLineListener implements Listener {
                                 "(LanternMC 集成训练场 开发者 嘘来自品牌“AiXCoder” 上取来的借鉴源码)"
                 });
                 p.getInventory().setItem(8, Default.getMenu());
+                cancel();
             }
-        }.runTaskLater(Training.getInstance(), 10);
+        }.runTaskLater(Training.getInstance(), 40);
     }
 
     @EventHandler
@@ -138,8 +139,9 @@ public class OnLineListener implements Listener {
 
     @EventHandler
     public void logoutBreak(PlayerQuitEvent e) {
-        Training.getInstance().getCounter(e.getPlayer()).instantBreakBlock();
+        Training.getCounter(e.getPlayer()).instantBreakBlock();
         Bukkit.getConsoleSender().sendMessage("§bTraining §7>> §a玩家 " + e.getPlayer().getName() + " 离线, 已清除其放置的方块.");
+        LocationManager.removePlayCheckPoint(e.getPlayer());
     }
 
     @EventHandler
@@ -153,7 +155,7 @@ public class OnLineListener implements Listener {
             Counter c = Training.getCounter((Player) e.getEntity());
             if (e.getFinalDamage() > 20) {
                 c.reset();
-                Training.getInstance().teleportCheckPoint((Player) e.getEntity());
+                Training.teleportCheckPoint((Player) e.getEntity());
                 TitleUtils.sendTitle((Player) e.getEntity(), "",
                         "§4致命伤害 - " + Utils.formatDouble(e.getFinalDamage() / 2) + " ❤", 10, 20, 10);
                 e.setDamage(0.0);
