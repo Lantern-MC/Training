@@ -1,8 +1,8 @@
 name: Training_Main
 version: '${pom.version}'
 main: net.lanternmc.training.Training
-depend:
-  -  Tools4LMC
+softdepend:
+  -  WGCore
 authors: [ SmAlLxY ]
 commands:
   bridge:

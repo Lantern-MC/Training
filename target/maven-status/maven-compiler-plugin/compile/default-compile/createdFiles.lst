@@ -1,6 +1,7 @@
 net/lanternmc/training/utils/SoundMachine.class
 net/lanternmc/training/utils/ParticleEffects$ParticlePacket.class
 net/lanternmc/training/utils/ActionBarUtils.class
+net/lanternmc/training/commands/Cluthes$1$1.class
 net/lanternmc/training/utils/ParticleEffects.class
 net/lanternmc/training/listener/TriggerBlockListener$5.class
 net/lanternmc/training/commands/VillagerSpawnPointCommand.class
@@ -12,6 +13,7 @@ net/lanternmc/training/listener/TriggerBlockListener$2.class
 net/lanternmc/training/Warp/Warp.class
 net/lanternmc/training/commands/StuckCommand.class
 net/lanternmc/training/utils/PathUtils$PathfinderGoalPatrol.class
+net/lanternmc/training/commands/Cluthes.class
 net/lanternmc/training/listener/fireball.class
 net/lanternmc/training/utils/ParticleEffects$ParticleProperty.class
 net/lanternmc/training/utils/TeleportRingEffect.class
@@ -21,6 +23,7 @@ net/lanternmc/training/utils/ParticleEffects$OrdinaryColor.class
 net/lanternmc/training/Training.class
 net/lanternmc/training/utils/ParticleEffects$ParticleColor.class
 net/lanternmc/training/utils/ReflectionUtils.class
+net/lanternmc/training/Clush/ClushCommand.class
 net/lanternmc/training/listener/TriggerBlockListener$3.class
 net/lanternmc/training/utils/ParticleEffects$ParticleVersionException.class
 net/lanternmc/training/utils/ParticleEffects$BlockData.class
@@ -38,6 +41,7 @@ net/lanternmc/training/api/TrainingAPI.class
 net/lanternmc/training/utils/ParticleEffects$ParticleDataException.class
 net/lanternmc/training/utils/ReflectionUtils$PackageType.class
 net/lanternmc/training/Warp/delWarp.class
+net/lanternmc/training/commands/Cluthes$1.class
 net/lanternmc/training/listener/CounterListener.class
 net/lanternmc/training/utils/PathUtils.class
 net/lanternmc/training/listener/AntiExplosion.class
@@ -48,6 +52,7 @@ net/lanternmc/training/utils/ParticleEffects$ItemData.class
 net/lanternmc/training/utils/NoAIUtils.class
 net/lanternmc/training/commands/ClearCommand.class
 net/lanternmc/training/listener/TriggerBlockListener$1.class
+net/lanternmc/training/commands/Clush.class
 net/lanternmc/training/utils/FireworkUtils.class
 net/lanternmc/training/utils/ItemBuilder.class
 net/lanternmc/training/utils/ParticleEffects$ParticleData.class

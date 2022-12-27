@@ -1,19 +1,19 @@
 package net.lanternmc.training.Warp;
 
-import net.lanternmc.r1_8.Command.AbstractCommand;
-import net.lanternmc.r1_8.Command.CommandResult;
-import net.lanternmc.r1_8.Command.TabResult;
-import net.lanternmc.r1_8.Utils.bukkit.permission.PermissionWrapper;
 import net.lanternmc.training.Training;
+import net.lanternstudio.toolsapi.CommandRegister.AbstractCommand;
+import net.lanternstudio.toolsapi.CommandRegister.CommandResult;
+import net.lanternstudio.toolsapi.CommandRegister.PermissionWrapper;
+import net.lanternstudio.toolsapi.CommandRegister.TabResult;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Iterator;
 
 public class Warp extends AbstractCommand {
     public Warp() {
@@ -50,11 +50,6 @@ public class Warp extends AbstractCommand {
         ConfigurationSection conf = Training.getInstance().getConf().getConfigurationSection("warps");
         if (conf == null) return TabResult.empty();
         Collection<String> set = conf.getKeys(true);
-        Iterator<String> it = set.iterator();
-//        List<String> all = new ArrayList<>();
-//        while (it.hasNext()) {
-//            all.add(it.next());
-//        }
         return TabResult.of(strings[0], set);
     }
 

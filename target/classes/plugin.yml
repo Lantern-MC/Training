@@ -1,8 +1,8 @@
 name: Training_Main
-version: '1.2'
+version: '1.3'
 main: net.lanternmc.training.Training
-depend:
-  -  Tools4LMC
+softdepend:
+  -  WGCore
 authors: [ SmAlLxY ]
 commands:
   bridge:

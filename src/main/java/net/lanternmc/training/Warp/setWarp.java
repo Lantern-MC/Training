@@ -1,10 +1,10 @@
 package net.lanternmc.training.Warp;
 
-import net.lanternmc.r1_8.Command.AbstractCommand;
-import net.lanternmc.r1_8.Command.CommandResult;
-import net.lanternmc.r1_8.Command.TabResult;
-import net.lanternmc.r1_8.Utils.bukkit.permission.PermissionWrapper;
 import net.lanternmc.training.Training;
+import net.lanternstudio.toolsapi.CommandRegister.AbstractCommand;
+import net.lanternstudio.toolsapi.CommandRegister.CommandResult;
+import net.lanternstudio.toolsapi.CommandRegister.PermissionWrapper;
+import net.lanternstudio.toolsapi.CommandRegister.TabResult;
 import org.bukkit.Location;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;

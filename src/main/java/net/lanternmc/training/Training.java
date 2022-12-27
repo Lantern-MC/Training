@@ -2,16 +2,19 @@ package net.lanternmc.training;
 
 import lombok.Getter;
 import lombok.Setter;
-import net.lanternmc.r1_8.Command.CommandController;
-import net.lanternmc.r1_8.File.FileUtil;
-import net.lanternmc.r1_8.Scorebroad.ScoreBoard5.BoardManager;
 import net.lanternmc.training.Warp.Warp;
 import net.lanternmc.training.Warp.delWarp;
 import net.lanternmc.training.Warp.setWarp;
+import net.lanternmc.training.api.BlockSkinProvider;
+import net.lanternmc.training.commands.*;
 import net.lanternmc.training.listener.*;
 import net.lanternmc.training.manager.Default;
 import net.lanternmc.training.manager.ScoreBoard;
-import net.lanternmc.training.utils.*;
+import net.lanternmc.training.utils.CleanroomChunkGenerator;
+import net.lanternmc.training.utils.NoAIUtils;
+import net.lanternstudio.toolsapi.CommandRegister.CommandController;
+import net.lanternstudio.toolsapi.FileManager.ConfigUtil;
+import net.lanternstudio.toolsapi.ScoreBoard.BoardManager;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.*;
@@ -22,13 +25,9 @@ import org.bukkit.material.MaterialData;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import net.lanternmc.training.commands.*;
-import net.lanternmc.training.api.BlockSkinProvider;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class Training extends JavaPlugin {
     @Getter
@@ -41,12 +40,12 @@ public class Training extends JavaPlugin {
     private static BlockSkinProvider blockSkinProvider;
 
     @Getter
-    private FileUtil Conf;
+    private ConfigUtil Conf;
 
     @Override
     public void onEnable() {
         instance = this;
-        Conf = new FileUtil(this, "Config.yml");
+        Conf = new ConfigUtil(this, "Config.yml");
         new BoardManager(this, new ScoreBoard());
         blockSkinProvider = new DefaultBlockSkinProvider();
         Bukkit.getConsoleSender().sendMessage(new String[]{
@@ -85,6 +84,7 @@ public class Training extends JavaPlugin {
         controller.addCommand(new setWarp());
         controller.addCommand(new Warp());
         controller.addCommand(new delWarp());
+        controller.addCommand(new Cluthes());
 
 
     }

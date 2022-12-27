@@ -1,8 +1,8 @@
 package net.lanternmc.training.manager;
 
 import me.clip.placeholderapi.PlaceholderAPI;
-import net.lanternmc.r1_8.Scorebroad.ScoreBoard5.BoardAdapter;
 import net.lanternmc.training.Training;
+import net.lanternstudio.toolsapi.ScoreBoard.BoardAdapter;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 

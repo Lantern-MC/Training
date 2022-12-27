@@ -27,11 +27,13 @@
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/utils/ParticleEffects.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/api/BlockSkinProvider.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/utils/FireworkUtils.java
+/home/Coding/Code/Training/src/main/java/net/lanternmc/training/commands/Clush.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/commands/VillagerSpawnPointCommand.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/Warp/setWarp.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/commands/StuckCommand.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/utils/ActionBarUtils.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/utils/NoAIUtils.java
+/home/Coding/Code/Training/src/main/java/net/lanternmc/training/Clush/ClushCommand.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/commands/ClearCommand.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/utils/ReflectionUtils.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/listener/CounterListener.java
@@ -39,3 +41,4 @@
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/utils/CleanroomChunkGenerator.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/api/TrainingAPI.java
 /home/Coding/Code/Training/src/main/java/net/lanternmc/training/manager/ScoreBoard.java
+/home/Coding/Code/Training/src/main/java/net/lanternmc/training/commands/Cluthes.java
