@@ -52,7 +52,6 @@ net/lanternmc/training/utils/ParticleEffects$ItemData.class
 net/lanternmc/training/utils/NoAIUtils.class
 net/lanternmc/training/commands/ClearCommand.class
 net/lanternmc/training/listener/TriggerBlockListener$1.class
-net/lanternmc/training/commands/Clush.class
 net/lanternmc/training/utils/FireworkUtils.class
 net/lanternmc/training/utils/ItemBuilder.class
 net/lanternmc/training/utils/ParticleEffects$ParticleData.class
